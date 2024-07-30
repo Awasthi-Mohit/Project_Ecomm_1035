@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+       <ImplicitUsings>enable</ImplicitUsings>
+	  <!--<Nullable>enable</Nullable>-->
+
+	  <UserSecretsId>aspnet-Project_Ecomm_App_1035-f3707d57-1eee-4e27-8922-d337f12adf71</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNet.Security.OAuth.Instagram" Version="6.0.15" />
+    <PackageReference Include="AspNet.Security.OAuth.LinkedIn" Version="6.0.15" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="6.0.18" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="6.0.18" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Twitter" Version="6.0.18" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.18" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.18" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.18" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.18" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.18" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.18" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.18">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.15" />
+    <PackageReference Include="Stripe.net" Version="41.25.0" />
+    <PackageReference Include="Twilio" Version="6.10.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Project_Ecomm_App_1035.DataAccess\Project_Ecomm_App_1035.DataAccess.csproj" />
+    <ProjectReference Include="..\Project_Ecomm_App_1035.Model\Project_Ecomm_App_1035.Model.csproj" />
+    <ProjectReference Include="..\Project_Ecomm_App_1035.Utility\Project_Ecomm_App_1035.Utility.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Areas\Customer\Views\_ViewImports.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Areas\Customer\Views\_ViewStart.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

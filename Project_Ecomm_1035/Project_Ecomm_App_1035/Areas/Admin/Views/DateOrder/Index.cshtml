@@ -1,0 +1,72 @@
+﻿@model Project_Ecomm_App_1035.Model.ViewModels.DateOrder
+<h2 class="text=center">DateOfOrder</h2>
+<br/>
+@if (Model.WeeklySummary != null)
+{
+
+    <h3>Weekly Summary:</h3>
+    <table class="table table-group-divider table-striped-columns table-sm">
+        <thead>
+            <tr>
+                <th>Week Name</th>
+                <th>Number of Orders</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var weekSummary in Model.WeeklySummary)
+            {
+                <tr>
+                    <td>@weekSummary.Key</td>
+                    <td>@weekSummary.Value</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+<br />
+@if (Model.MonthlySummary != null)
+{
+    <h3>Monthly Summary:</h3>
+    <table class="table table-group-divider table-striped-columns table-sm">
+        <thead>
+            <tr>
+                <th>Month Name</th>
+                <th>Number of Orders</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var monthSummary in Model.MonthlySummary)
+            {
+                <tr>
+                    <td>@monthSummary.Key</td>
+                    <td>@monthSummary.Value</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@if (Model.OrderHeaders != null)
+{
+    <h3>Order Details:</h3>
+    <table class="table table-group-divider table-striped-columns table-sm">
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Order Date</th>
+                <th>Order Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in Model.OrderHeaders)
+            {
+                <tr>
+                    <td>@order.id</td>
+                    <td>@order.OrderDate.ToString("yyyy-MM-dd")</td>
+                    <td>@order.OrderTotal</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+}

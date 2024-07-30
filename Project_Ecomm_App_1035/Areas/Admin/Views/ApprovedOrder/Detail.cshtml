@@ -1,0 +1,83 @@
+﻿ </div>
+<div class="col-6 container border rounded">
+    <h2 class="text-center">Order Detail's</h2>
+    <br />
+    <div class="row">
+        <div class="col-6">
+            <h4>OrderDate &nbsp;:</h4>
+        </div>
+        <div class="col-6">
+            <h4> @Model.OrderDate</h4>
+        </div>
+    </div>  <div class="row">
+        <div class="col-6">
+            <h4>ShippingDate &nbsp;:</h4>
+        </div>
+        <div class="col-6">
+            <h4> @Model.ShippingDate</h4>
+        </div>
+        @* </div>  <div class="row">
+        <div class="col-6">
+        <h4>TrackingNumber &nbsp;:</h4>
+        </div>
+        <div class="col-6">
+        <h4> @Model.TrackingNumber</h4>
+        </div>*@
+    </div>  <div class="row">
+        <div class="col-6">
+            <h4>Carrier &nbsp;:</h4>
+        </div>
+        <div class="col-6">
+            <h4> @Model.Carrier</h4>
+        </div>
+    </div>  <div class="row">
+        <div class="col-6">
+            <h4>OrderStatus &nbsp;: </h4>
+        </div>
+        <div class="col-6">
+            <h4> @Model.OrderStatus</h4>
+        </div>
+    </div>  <div class="row">
+        <div class="col-6">
+            <h4>PaymentStatus &nbsp;:</h4>
+        </div>
+        <div class="col-6">
+            <h4> @Model.PaymentStatus</h4>
+        </div>
+    </div>  <div class="row">
+        <div class="col-6">
+            <h4>PaymentDate &nbsp;:</h4>
+        </div>
+        <div class="col-6">
+            <h4> @Model.PaymentDate</h4>
+        </div>
+    </div>  <div class="row">
+        <div class="col-6">
+            <h4>PaymentDueDate &nbsp;:</h4>
+        </div>
+        <div class="col-6">
+            <h4> @Model.PaymentDueDate</h4>
+        </div>
+        @* </div>  <div class="row">
+        <div class="col-6">
+        <h4>TransactionId &nbsp;:</h4>
+        </div>
+        <div class="col-6">
+        <h4> @Model.TransationId</h4>
+        </div>
+        </div>*@
+
+        @*div class="row">
+        <div class="col-4">
+        <h4>Quantity &nbsp;: </h4>
+        </div>
+        <div class="col-8">
+        <h4>@Model.OrderDetails.Count</h4> <!-- Display the count here -->
+        </div>
+        </div>*@
+    </div>
+</div>
+<br />
+<div class="col-4 offset-4">
+    <a class="btn btn-success form-control" asp-action="Index"> Back To List</a>
+</div>
